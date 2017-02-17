@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>goJS</title>
+	<title>Tournament</title>
+<meta name="description" content="A tournament or bracket diagram, with automatic promotion as results are entered interactively." />
+<!-- Copyright 1998-2017 by Northwoods Software Corporation. -->
+<meta charset="UTF-8">
+</head>
+<body onload="init()">
+<div id="sample">
+  <h3>GoJS Tournament Bracket</h3>
+  <!-- The DIV for the Diagram needs an explicit size or else we won't see anything.
+       Also add a border to help see the edges. -->
+  <div id="myDiagramDiv" style="border: solid 1px black; background: #4D4D4D; width:700px; height:600px"></div>
+  <p>
+    Click on the empty score boxes next to names to fill in scores for each player.
+    The scores must be non-negative numbers with at most 3 digits. Scores are validated using a <a>TextEditingTool.textValidation</a> function.
+    When two players in a "game" have a score, one of them will automatically advance to the next round of the bracket.
+  </p>
+</div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.6.7/go-debug.js"></script>
+<script id="code" type="text/javascript" src="chart.js"></script>
+</html>
